@@ -82,17 +82,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Portfolio of Md Kaif Khan — Data Science and Machine Learning engineer building ML pipelines and computer vision systems.",
+          "Portfolio of Md Kaif Khan, B.Tech CSE (Data Science & AI/ML) graduate building end-to-end ML pipelines, computer vision systems, and data engineering solutions.",
       },
       { name: "author", content: "Md Kaif Khan" },
       { property: "og:title", content: "Md Kaif Khan — Data Scientist & ML Engineer" },
       {
         property: "og:description",
         content:
-          "Portfolio of Md Kaif Khan — Data Science and Machine Learning engineer building ML pipelines and computer vision systems.",
+          "Portfolio of Md Kaif Khan, B.Tech CSE (Data Science & AI/ML) graduate building end-to-end ML pipelines, computer vision systems, and data engineering solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Md Kaif Khan — Data Scientist & ML Engineer" },
+      { name: "twitter:description", content: "Portfolio of Md Kaif Khan, B.Tech CSE (Data Science & AI/ML) graduate building end-to-end ML pipelines, computer vision systems, and data engineering solutions." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LvOQVoC9N1OYtLuTUlpfFN1bXZ72/social-images/social-1786859836767-social-image.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LvOQVoC9N1OYtLuTUlpfFN1bXZ72/social-images/social-1786859836767-social-image.webp" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
