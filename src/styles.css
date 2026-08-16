@@ -4,6 +4,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-accent-from: var(--accent-from);
+  --color-accent-to: var(--accent-to);
+}
+
 /*
  * Design system definition.
  *
@@ -62,26 +69,32 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --radius: 0.875rem;
+  --background: oklch(0.14 0.018 275);
+  --foreground: oklch(0.97 0.005 270);
+  --card: oklch(0.18 0.02 275);
+  --card-foreground: oklch(0.97 0.005 270);
+  --popover: oklch(0.17 0.02 275);
+  --popover-foreground: oklch(0.97 0.005 270);
+  --primary: oklch(0.68 0.19 265);
+  --primary-foreground: oklch(0.14 0.018 275);
+  --secondary: oklch(0.24 0.025 275);
+  --secondary-foreground: oklch(0.97 0.005 270);
+  --muted: oklch(0.24 0.025 275);
+  --muted-foreground: oklch(0.68 0.02 270);
+  --accent: oklch(0.72 0.16 300);
+  --accent-foreground: oklch(0.14 0.018 275);
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.97 0.005 270);
+  --border: oklch(0.99 0 0 / 10%);
+  --input: oklch(0.99 0 0 / 14%);
+  --ring: oklch(0.68 0.19 265);
+  --accent-from: oklch(0.7 0.19 250);
+  --accent-to: oklch(0.68 0.2 310);
+  --gradient-accent: linear-gradient(115deg, var(--accent-from), var(--accent-to));
+  --gradient-text: linear-gradient(100deg, oklch(0.98 0.01 260), oklch(0.78 0.16 285));
+  --shadow-glow: 0 20px 60px -20px color-mix(in oklab, var(--accent-from) 55%, transparent);
+  --glass-bg: oklch(0.99 0 0 / 4%);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
