@@ -15,7 +15,7 @@ function Typewriter() {
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const full = roles[index];
+    const full = roles[index] ?? roles[0]!;
     const done = !deleting && text === full;
     const cleared = deleting && text === "";
     let delay = deleting ? 45 : 85;
