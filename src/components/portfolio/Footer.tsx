@@ -6,8 +6,8 @@ export function Footer() {
       <div className="container-x flex flex-col items-center gap-6 text-center">
         <div className="flex gap-3">
           {[
-            { href: "https://github.com/", Icon: Github, label: "GitHub" },
-            { href: "https://www.linkedin.com/", Icon: Linkedin, label: "LinkedIn" },
+            { href: "https://github.com/kaif313129", Icon: Github, label: "GitHub" },
+            { href: "https://www.linkedin.com/in/md-kaif-khan-709776304/", Icon: Linkedin, label: "LinkedIn" },
             { href: "mailto:mdkaif.khan22@st.niituniversity.in", Icon: Mail, label: "Email" },
           ].map(({ href, Icon, label }) => (
             <a
